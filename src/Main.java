@@ -1,15 +1,19 @@
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {10, 1, 32, 3,5};
-        int min = findMin(arr, arr.length);
-        System.out.println("min is " + min);
+        int[] arr = {3, 2, 4, 1};
+        double average = findAverage(arr, arr.length);
+        System.out.println("Average is " + average);
     }
-    public static int findMin(int[] arr, int n){
-        if (n==1)
+
+    public static double findAverage(int[] arr, int n) {
+        double sum = 0;
+        if (n == 1)
             return arr[0];
-        else {
-            int min = findMin(arr, n-1);
-            return Math.min(min, arr[n-1]);
+        else{
+            for(int i = 0; i < n;i++){
+                sum += arr[i];
+            }
+            return sum/n;
         }
     }
 }
