@@ -13,10 +13,12 @@ public class Problem7 {
         }
     }
     public static void arrReverse(int[] arr, int a, int b){
-        for(int i = a; i < (a+b)/2; i++){
-            int c = arr[i];
-            arr[i] = arr[b-i];
-            arr[b-i] = c;
+        if(a >= b){
+            return;
         }
+        int c = arr[a];
+        arr[a] = arr[b];
+        arr[b] = c;
+        arrReverse(arr, a+1, b-1);
     }
 }
