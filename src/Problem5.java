@@ -6,6 +6,12 @@ public class Problem5 {
         int n = scanner.nextInt();
         System.out.println(findFibonacci(n));
     }
+
+    /**
+     * findFibonacci - this method calculates Fibonacci sequence of the n number
+     * @param n - the integer to calculate for
+     * @return - return the value of the n in Fibonacci
+     * */
     public static int findFibonacci(int n){
         if(n == 1)
             return 1;
