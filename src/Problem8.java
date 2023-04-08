@@ -12,12 +12,10 @@ public class Problem8 {
 
     public static boolean checkDigits(String s) {
         for (int i = 0; i < s.length(); i++) {
-            if (Character.isDigit(s.charAt(i))) {
+            if (!Character.isDigit(s.charAt(i))) {
                 return false;
             }
         }
-        else{
-            return true
-        }
+        return true;
     }
 }
