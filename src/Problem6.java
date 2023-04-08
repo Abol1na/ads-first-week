@@ -11,7 +11,7 @@ public class Problem6 {
      * power - it calculates the integer a in pow n
      * @param a - integer
      * @param n - power
-     * @return - returns a in n degree
+     * @return - returns a integer in n degree
      */
     public static int power(int a, int n){
         if (a == 0 && (n > 0 || n < 0))
