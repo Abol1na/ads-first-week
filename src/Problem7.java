@@ -3,7 +3,12 @@ public class Problem7 {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
-        int m = scanner.nextInt();
-        System.out.println(n + " " + m);
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++){
+            arr[i] = scanner.nextInt();
+        }
+        for(int i = 0; i < n; i++){
+            System.out.print(arr[i] + " ");
+        }
     }
 }
