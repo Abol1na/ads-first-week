@@ -12,6 +12,14 @@ public class Problem7 {
             System.out.print(arr[i] + " ");
         }
     }
+
+    /**
+     * arrReverse - it reverses the written order
+     * @param arr - array of elements
+     * @param a - the starting index of the array
+     * @param b - the ending index of the array
+     * @return - returns array in reverse order
+     */
     public static void arrReverse(int[] arr, int a, int b){
         if(a >= b){
             return;
