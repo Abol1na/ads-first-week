@@ -13,6 +13,9 @@ public class Problem7 {
         }
     }
     public static void arrReverse(int[] arr, int a, int b){
+        if(a >= b){
+            return;
+        }
         int c = arr[a];
         arr[a] = arr[b];
         arr[b] = c;
