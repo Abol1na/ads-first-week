@@ -8,6 +8,12 @@ public class Problem3 {
         else
             System.out.println("Composite");
     }
+
+    /**
+     * findPrime - this function checks whether a given number is Prime
+     * @param n - integer num
+     * @return - return true if it is Prime, return false if it otherwise
+     */
     public static boolean findPrime(int n, int i){
         if(n<=2) {
             return (n == 2) ? true : false;
