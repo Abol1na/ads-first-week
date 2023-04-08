@@ -6,6 +6,13 @@ public class Problem9 {
         int k = scanner.nextInt();
         System.out.println(findBinom(n,k));
     }
+
+    /**
+     * findBinom - this method calculates Binomial coefficient
+     * @param n - total number of items
+     * @param k - number of items to be chosen
+     * @return - returns Bin coeff
+     */
     public static int findBinom(int n, int k){
         if(n == k || k == 0)
             return 1;
