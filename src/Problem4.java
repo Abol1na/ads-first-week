@@ -5,6 +5,12 @@ public class Problem4 {
         int n = scanner.nextInt();
         System.out.println(findFactorial(n));
     }
+
+    /**
+     * findFactorial - calculates the factorial of the given integer
+     * @param n - the integer to calculate for
+     * @return the factorial of the n
+     */
     public static int findFactorial(int n){
         if(n == 1)
             return 1;
